@@ -1,5 +1,42 @@
+import { usePatientStore } from "../store"
+
 export default function PacientList() {
+  const patients = usePatientStore(state => state.patients)
   return (
-    <div>pacientList</div>
+    <div
+      className="md:w1/2 lg:3/5 md:h-screen overflow-y-scroll"
+    >
+      {patients.length ? (
+        <>
+          <h2 className="font-black text-3xl text-center">Listado de pacientes</h2>
+          <p className="text-xl mt-5 mb-10 text-center">
+            Administra tus {''}
+            <span className="text-mainColor font-bold">
+              pacientes y citas
+            </span>
+          </p>
+          {patients.map(patient =>(
+            <Patients
+          ))
+
+          }
+        </>
+
+      ) : (
+        <>
+          <h2
+            className="font-black text-3xl text-center"
+          >
+            No hay pacientes
+            <p className="text-xl mb-10 text-center">
+              Comienza agregando pacientes {''}
+              <span className="text-mainColor font-black">
+                y apareceran en este lugar
+              </span>
+            </p>
+          </h2>
+        </>
+      )}
+    </div>
   )
 }
