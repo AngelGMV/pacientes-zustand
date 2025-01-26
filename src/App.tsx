@@ -11,8 +11,8 @@ function App() {
           <span className="text-mainColor">Veterinaria</span>
         </h1>
         <div className="mt-12 md:flex">
-          <PacientForm />
-          <PacientList />
+          <PacientForm/>
+          <PacientList/>
         </div>
       </div>
     </>
