@@ -1,8 +1,10 @@
-import PacientForm from "./components/PacientForm"
-import PacientList from "./components/PacientList"
+import PacientForm from "./components/PatientForm"
+import PacientList from "./components/PatientList"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/ReactToastify.css"
 
 function App() {
-
+  
   return (
     <>
       <div className="container mx-auto mt-20">
@@ -15,6 +17,9 @@ function App() {
           <PacientList/>
         </div>
       </div>
+      <ToastContainer
+      
+      />
     </>
   )
 }

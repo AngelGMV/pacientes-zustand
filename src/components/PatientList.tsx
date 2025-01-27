@@ -32,7 +32,7 @@ export default function PacientList() {
             className="font-black text-3xl text-center"
           >
             No hay pacientes
-            <p className="text-xl mb-10 text-center">
+            <p className="text-lg mt-5 mb-10 text-center">
               Comienza agregando pacientes {''}
               <span className="text-mainColor font-black">
                 y apareceran en este lugar
